@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website King Firza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white font-sans">
+
+   <!-- Navbar -->
+<header class="flex items-center justify-between p-4 border-b">
+    <!-- Logo bulat -->
+    <div class="h-[50px] w-[50px] overflow-hidden rounded-full border border-gray-300">
+        <img src="logo.jpeg" 
+             alt="Logo King Firza" 
+             class="w-full h-full object-cover">
+    </div>
+
+    <nav class="flex space-x-4">
+        <a href="#" class="px-4 py-2 border hover:bg-gray-200">Home</a>
+        <a href="#" class="px-4 py-2 border hover:bg-gray-200">Our HeadQuarter</a>
+        <a href="#" class="px-4 py-2 border hover:bg-gray-200">Our Profile</a>
+        <a href="#" class="px-4 py-2 border hover:bg-gray-200">Message Us</a>
+    </nav>
+</header>
+
+
+    <!-- Welcome Section -->
+    <section class="p-8">
+        <h1 id="welcome-text" class="text-2xl font-bold text-center">
+            Welcome Guest to Website King Firza
+        </h1>
+    </section>
+     <!-- Divider -->
+  <hr class="border-gray-800">
+
+<!-- Our Headquarter -->
+<section class="p-6">
+  <h2 class="text-lg font-bold mb-4">Our Headquarter</h2>
+  <div class="flex space-x-4">
+    <div class="flex flex-col items-center">
+      <div class="w-32 h-32 rounded-full overflow-hidden border border-gray-300">
+        <img src="https://i.pinimg.com/1200x/bc/b4/52/bcb452af7230cea1922b81feb74ae849.jpg" alt="HQ 1" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-center text-sm font-medium">Tokyo</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="w-32 h-32 rounded-full overflow-hidden border border-gray-300">
+        <img src="https://i.pinimg.com/1200x/82/6b/68/826b68a5ba6023dcf70f326fc64500c5.jpg" alt="HQ 2" class="w-full h-full object-cover">
+      </div>
+      <p class="mt-2 text-center text-sm font-medium">Jakarta</p>
+    </div>
+    <div class="flex flex-col items-center">
+  <div class="w-32 h-32 rounded-full overflow-hidden border border-gray-300">
+    <img src="https://i.pinimg.com/1200x/02/a3/47/02a34771e0a6fed3b5f22dabf54c32b7.jpg" alt="HQ 3" class="w-full h-full object-cover">
+  </div>
+  <p class="mt-2 text-center text-sm font-medium">Bandung</p>
+</div>
+  </div>
+
+  
+</section>
+
+<!-- Divider -->
+ <hr class="border-gray-800">
+
+<!-- Portfolio -->
+<section class="p-6">
+  <h1 class="text-2xl font-bold mb-4">Our Profile</h1>
+  <p class="mb-4">
+    We are a company dedicated to providing the best services to our customers.<br>
+    Our team is composed of highly skilled professionals who are passionate about their work.
+  </p>
+  <div class="mb-2 font-semibold flex items-center gap-2">
+    <span>📌</span> <span>Vision</span>
+  </div>
+  <p class="mb-4 ml-6">
+    To become the leading internet service provider that delivers fast, reliable, and affordable connectivity, empowering people to access the limitless world of digital opportunities.
+  </p>
+  <div class="mb-2 font-semibold flex items-center gap-2">
+    <span>📌</span> <span>Mission</span>
+  </div>
+  <ol class="list-decimal ml-10 space-y-2">
+    <li>Provide high-speed, stable, and secure internet services for diverse customer needs.</li>
+    <li>Deliver responsive, friendly, and solution-oriented customer support.</li>
+    <li>Expand infrastructure and adopt the latest technology to reach wider areas.</li>
+    <li>Support digital transformation for communities and businesses through innovative services.</li>
+    <li>Build sustainable partnerships to create value for customers and stakeholders.</li>
+  </ol>
+</section>
+
+<!-- Divider -->
+<hr class="border-t-2 border-gray-800 my-4">
+
+
+
+<!-- Divider -->
+<hr class="border-t-2 border-gray-800 my-4">
+
+ <!-- Message Us + Your Identity -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 bg-red-50 p-6 rounded-lg">
+      <!-- Message Us Form -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Message Us</h3>
+        <form id="messageForm" class="space-y-4">
+          <div>
+            <label class="block font-semibold">Name:</label>
+            <input type="text" id="name" class="w-full p-2 border rounded" required>
+          </div>
+
+          <div>
+            <label class="block font-semibold">Tanggal Lahir:</label>
+            <input type="date" id="dob" class="w-full p-2 border rounded" required>
+          </div>
+
+          <div>
+            <label class="block font-semibold">Jenis Kelamin:</label>
+            <div class="flex gap-4">
+              <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+              <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold">Komentar:</label>
+            <textarea id="comment" class="w-full p-2 border rounded" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">Submit</button>
+        </form>
+      </div>
+
+      <!-- Your Identity -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Your Identity</h3>
+        <div class="bg-white p-4 rounded shadow space-y-2">
+          <p id="outputName">Name: -</p>
+          <p id="outputDob">Tanggal Lahir: -</p>
+          <p id="outputGender">Jenis Kelamin: -</p>
+          <p id="outputComment">Komentar: -</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
